@@ -1,32 +1,42 @@
-## Let's Continue
+## Dynamic Array Operations
 
-The memory access is random, meaning the insertion of an element in an array is not assuring it will be contiguous.
+### Initialization
 
-To solve this, we re-allocate in memory a new array ( preferably with double the size for more efficient time and space management operations ), that can hold the new inserted values.
+To declare and initialize a `DynamicArray` object:
 
-### Dynamic Array Operations
+1. Declare an object `DynamicArray()` with the following attributes:
+   - `length`: Current number of elements in the array
+   - `capacity`: Current capacity of the array
+   - `fixed_type`: Data type of the elements stored in the array
 
-To declare and initialize `DynamicArray()`:
+### Insertion
 
-1. Declare an object `DynamicArray()` with attributes: `length`, `capacity`, `fixed_type`
-2. If length equals capacity:
+When inserting a value into the array:
+
+1. If `length` equals `capacity`:
     a. Double the capacity
-	     a1. Create a new array with the new capacity
-	     a2. Copy elements from the old array to the new array
-	     a3. Make the new array the default one
-3. Insert a value at the end of the array (`array[length] = value`)
-4. Increase the length by 1
+        - Create a new array with the new capacity
+        - Copy elements from the old array to the new array
+        - Make the new array the default one
+2. Insert the value at the end of the array: `array[length] = value`
+3. Increase the `length` by 1
+
+### Removal
 
 To pop an element from the end of the array:
 
 1. Ensure the array is not empty
-2. Decrease the length by 1
+2. Decrease the `length` by 1
+
+### Access
 
 To get an element at a specific index of the array:
 
 1. Ensure the index is within bounds (out of bounds exception)
-2. Return the value at the specific index (`array[index]`)
+2. Return the value at the specific index: `array[index]`
+
+### Insertion at Specific Index
 
 To insert an element at a specific index of the array:
 
-1. Assign a value to the specified index of the array (`array[index] = value`)
+1. Assign a value to the specified index of the array: `array[index] = value`
