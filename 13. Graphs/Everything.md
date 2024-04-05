@@ -49,4 +49,4 @@ To find the shortest path from the top-left corner to the bottom-right corner in
             - Check if it is not blocked (grid value equals 1)
             - If the above conditions are met, add the neighboring cell coordinates to the queue and mark it as visited
     - Increment the length of the shortest path
-9. If the loop completes without finding a path, return the length (This should not happen in this specific scenario, as there is always a path from the top-left corner to the bottom-right corner in the given grid.)
+9. If the loop completes without finding a path, return the length (This should not happen in this specific scenario, as there is always a path from the top-left corner to the bottom-right corner in the given grid)
