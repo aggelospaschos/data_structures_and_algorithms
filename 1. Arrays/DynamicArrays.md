@@ -13,13 +13,16 @@ To declare and initialize a `DynamicArray` object:
 
 When inserting a value into the array:
 
-1. If `length` equals `capacity`:
-    a. Double the capacity
-        - Create a new array with the new capacity
-        - Copy elements from the old array to the new array
-        - Make the new array the default one
-2. Insert the value at the end of the array: `array[length] = value`
-3. Increase the `length` by 1
+If length equals capacity:
+a. Double the capacity
+   - Create a new array with the new capacity
+   - Copy elements from the old array to the new array
+   - Make the new array the default one
+
+Insert the value at the end of the array:
+- `array[length] = value`
+
+Increase the length by 1
 
 ### Removal
 
