@@ -22,7 +22,7 @@
 
    - Return the constructed adjacency list
 
-### Depth-First Search (DFS) Implementation:
+### Depth-First Search (DFS) Implementation
    - Create a method named dfs to perform depth-first search
 
    - Check if the current node has been visited before. If so, return 0
