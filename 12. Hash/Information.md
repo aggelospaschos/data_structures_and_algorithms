@@ -1,4 +1,4 @@
-Hash Usage
+## Hash Usage
 
 **Key:** 
 A key is the input value fed into a hash function to determine the index or location for the storage of an item in a data structure.
@@ -34,9 +34,9 @@ A hash table is a data structure that maps keys to values using a hash function.
 
 **Step 6:** Store each string at its corresponding hash index in the hash table
 
-Hash Implementation
+## Hash Implementation
 
-**Separate Chaining**
+### Separate Chaining
 
 **Step 1:** Create an empty hash table with slots corresponding to possible hash values
 
@@ -48,7 +48,7 @@ Hash Implementation
   - Handle collision by creating a linked list at that slot if not already present
   - Append the key to the linked list
 
-**Linear Probing**
+### Linear Probing
 
 **Step 1:** Create an empty hash table with slots corresponding to possible hash values
 
